@@ -258,11 +258,7 @@
   .header__decorative-text::after {
     margin: 29px 30px 2px 10px;
   }
-
-  .header__theme-menu {
-    grid-column: 4/5;
-  }
-
+  
   .header__theme-menu {
     grid-column: 4/5;
     align-self: end;
