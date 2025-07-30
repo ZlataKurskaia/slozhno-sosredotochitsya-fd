@@ -27,3 +27,7 @@
     --background-image: url("../images/cover-image-light.png");
   }
 }
+
+.theme-light .header__decorative-text {
+  display: none;
+}
