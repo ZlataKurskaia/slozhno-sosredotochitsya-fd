@@ -208,9 +208,6 @@
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   max-inline-size: 100%;
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .footer {
@@ -359,7 +356,6 @@
   .image-block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: min-content 25vw 30vw 41vw; /*vw*/
     gap: 20px;
     padding-block-end: 0px;
   }
@@ -417,12 +413,12 @@
 @media (width >= 1024px) {
   .header {
     min-block-size: 768px;
-    grid-template-columns: 39.5vw 10vw 12vw 1fr;
-    grid-template-rows: 30vw 12vw 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content 1fr;
   }
 
   .header__theme-menu {
-    grid-column: 1/-1;
+    grid-column: 1/3;
     align-self: start;
     justify-self: center;
     padding-block-start: 1px;
@@ -436,18 +432,17 @@
   }
 
   .header__title {
-    grid-column: 1/5;
-    align-self: center;
-    padding-block-end: 10px;
+    padding-block-end: 17px;
     padding-block-start: 0px;
   }
 
   .header__text {
-    grid-column: 3/5;
+    grid-column: 2;
     grid-row: 3/4;
     align-self: center;
-    padding-block-end: 22px;
-    padding-inline-start: 6px;
+    justify-self: end;
+    padding-block-end: 38px;
+    padding-inline-start: 11px;
   }
 
   .main__title,
@@ -456,10 +451,8 @@
   }
 
   .block-list-what {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    gap: 20px;
   }
 
   .text-block-tips .main__title {
@@ -467,7 +460,6 @@
   }
 
   .image-block {
-    grid-template-rows: min-content 25vw 31vw 42vw;
     gap: 21px;
   }
 
